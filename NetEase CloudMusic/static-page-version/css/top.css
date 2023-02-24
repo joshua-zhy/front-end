@@ -1,0 +1,63 @@
+.top {
+    height: 105px;   
+    
+}
+
+.top .top-bar {
+    height: 70px;
+    background-color: #242424;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+}
+
+.top-bar-content {
+    /* flex 布局 */
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    line-height: 69px;
+    /* background-color:#f00; */
+}
+
+.bar-left {
+    display: flex;
+}
+
+.bar-left .logo  {
+    background: url(../img/logo.png);
+}
+
+.bar-left .logo a{
+    display: block;
+    /* text-indent line-height:  对行内元素无效 */
+    /* line-hight 会被block 和inline-block 继承 不会被inline 继承 */
+    width: 157px;
+    /* 让文字消失 */
+    text-indent: -9999px;
+    padding-right: 20px;
+}
+
+.bar-left .list {
+    display: flex;
+}
+.bar-left .list  li{
+    display: block;
+    padding: 0 19px;
+    font-size: 14px;
+}
+.bar-left .list .item {
+    color:#ccc;
+} 
+
+
+/* a:active 激活的链接（鼠标在链接上长按住未松开） */
+.bar-left .list li:hover,.bar-left .list li:active {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.active {
+    color: #fff;
+    background-color: #000;
+}
