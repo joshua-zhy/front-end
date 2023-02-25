@@ -1,0 +1,126 @@
+.banner {
+    background: url(../img/banner-blur.jpg) no-repeat center center/cover;
+}
+
+.wrap-banner {
+    position: relative;
+    height: 285px;
+}
+
+.wrap-banner .banner-left {
+    position: relative;
+    width: 730px;
+}
+
+.wrap-banner .img-list {
+    position: relative;
+    display: flex;
+    /* 溢出隐藏 */
+    overflow: hidden;
+
+}
+.wrap-banner .img-list li {
+    /* 默认是1是压缩的  0表示不压缩 */
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+.wrap-banner .img-list .item  {
+    /* 继承到父元素的宽度 */
+    display: block;
+}
+
+
+.wrap-banner .img-list .item img{
+    width: 100%;
+    height: 285px;
+}
+
+.wrap-banner .banner-left .indicator {
+    position: absolute; 
+    /* 这样设置必须要有固定的width  */
+    /* width: 200px; */
+    bottom: 5px;
+    left: 0;
+    right: 0; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-banner .banner-left .indicator  li {
+    margin: 0 2px;
+}
+
+.wrap-banner .banner-left .indicator .item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/banner-indicator.png) 3px -343px;
+}
+
+.wrap-banner .banner-left .indicator .item.active, 
+.wrap-banner .banner-left .indicator .item:hover{
+    background-position:  -16px -343px;
+} 
+
+
+.banner-right {
+    position: absolute;
+   /* 会把多余的2px盖在左边 */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 254px;
+    /* top:0 bottom 会把高度拉伸到父元素的高度     所以不用设高度 */
+    background: url(../img/download.png);
+}
+
+.banner-right .download {
+    display: inline-block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+    text-indent: -9999px;
+}
+
+
+.banner-right .download:hover {
+    background: url(../img/download.png) 0 -290px;
+}
+
+.banner-right p {
+    color: #8D8D8D;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.control {
+    position: absolute;
+    /* 垂直居中 */
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 37px;
+    height: 63px;
+    background-image: url(../img/banner-indicator.png);
+}
+
+.control.control-left {
+    left: -70px;
+    background-position: 0 -360px;
+}
+
+.control.control-left:hover {
+    background-position: 0 -430px;
+}
+.control.control-right {
+    right:-70px;
+    background-position: 0 -508px;
+}
+.control.control-right:hover {
+    background-position: 0 -578px;
+}

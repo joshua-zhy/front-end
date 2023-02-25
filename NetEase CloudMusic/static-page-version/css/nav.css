@@ -1,0 +1,34 @@
+/* nav */
+.nav {
+    height: 35px;
+    line-height:35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+}
+.nav .nav-bar {
+    padding-left: 180px;
+    box-sizing: border-box;
+}
+
+.nav .list {
+    display: flex;
+}
+.nav .list .item {
+    display: inline-block;
+}
+
+.nav .list .item span {
+    display: inline-block;
+    padding: 2px 13px;
+    margin: 5px 17px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 21px;
+} 
+
+.nav .list .item:hover span,
+.nav .list .item.active span{
+    background-color: #9B0909;
+} 

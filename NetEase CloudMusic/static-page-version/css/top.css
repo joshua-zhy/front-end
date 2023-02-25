@@ -1,8 +1,9 @@
 .top {
-    height: 105px;   
+    height: 70px;   
     
 }
 
+/* top-bar */
 .top .top-bar {
     height: 70px;
     background-color: #242424;
@@ -19,12 +20,13 @@
     /* background-color:#f00; */
 }
 
+
 .bar-left {
     display: flex;
 }
 
 .bar-left .logo  {
-    background: url(../img/logo.png);
+    background: url(../img/sprite.png);
 }
 
 .bar-left .logo a{
@@ -40,24 +42,126 @@
 .bar-left .list {
     display: flex;
 }
-.bar-left .list  li{
-    display: block;
-    padding: 0 19px;
-    font-size: 14px;
+
+.bar-left .list li {
+    position: relative;
 }
+
 .bar-left .list .item {
-    color:#ccc;
-} 
-
-
-/* a:active 激活的链接（鼠标在链接上长按住未松开） */
-.bar-left .list li:hover,.bar-left .list li:active {
-    color: #fff;
-    background-color: #000;
-    cursor: pointer;
+    /* li 69px line 继承下来的 a 是行内元素 无法继承 让他变成块级元素或者行内块元素 */
+    display: block;
+    color: #ccc;
+    padding: 0 19px;
 }
 
-.active {
+
+/* 选中同时又item 和 active 的元素 */
+.bar-left .list .item:hover,.bar-left .list .item.active {
     color: #fff;
     background-color: #000;
 }
+
+.bar-left .list .item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    /* 水平居中 */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 12px;
+    height: 7px;
+    background:url(../img/sprite.png)  -226px 0;
+}
+
+.bar-left .list .icon-hot {
+    position: absolute;
+    top: 21px;
+    left: 100px;
+}
+
+
+.bar-right {
+    display: flex;  
+    align-items: center; 
+    margin-right: 10px;
+}
+.bar-right .search {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 158px;
+    height: 32px;
+    border-radius: 30px;
+    background: #fff  url(../img/sprite.png) 0 -99px;
+}
+.bar-right .search input {
+    width: 115px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+
+.bar-right .anthor a {
+    display: inline-block;
+    width: 90px;
+    height: 32px;
+    color: #ccc;
+    line-height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #4f4f4f;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.bar-right .anthor a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.bar-right .login a {
+    color: #787878;
+}
+/* 经过 login 下面的a  */
+.bar-right .login:hover a {
+    color: #ccc;
+}
+
+
+/* 直接经过a  */
+.bar-right .login a:hover {
+    color: #787878;
+    text-decoration: underline;
+}
+
+/* nav */
+.nav {
+    height: 35px;
+    line-height:35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+}
+.nav .nav-bar {
+    padding-left: 180px;
+    box-sizing: border-box;
+}
+
+.nav .list {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
