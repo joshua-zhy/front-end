@@ -1,0 +1,83 @@
+.top {
+    border: 1px solid #f5f5f5f5;
+}
+.top_wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.area {
+    display: flex;
+    justify-content: space-between;
+    /* 默认是align-items 是 normal == stetch 拉伸 */
+    /* align-items: center; */
+    height: 41px;
+    line-height: 41px;
+}
+
+.area .area-left {
+    display: flex;
+}
+
+
+
+.area .area-left .logo a {
+    display: block;
+    /* text-indent line-height:  对行内元素无效 */
+    /* line-hight 会被block 和inline-block 继承 不会被inline 继承 */ 
+    width: 150px;
+    /* 让文字消失 */
+    text-indent: -9999px;
+    background: url(../../img/top/logo.png) no-repeat center;
+
+}
+
+
+.area .area-right {
+   display: flex;
+}
+
+.area .area-right .item  a {
+    position: relative;
+    display: block;
+}
+
+.area .area-right .item .grows {
+    color: #464646;
+    padding-left: 30px;
+}
+
+
+.area .area-right .item .grows::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/top/title_sprite.png) no-repeat  -30px 0;
+}
+
+.area .area-right .item .rank {
+    color: #333;
+    margin-left: 20px;
+    padding-right: 30px;
+}
+
+
+
+.area .area-right .item .rank::after {
+    content: "";
+    position: absolute;
+    right:0px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/top/title_sprite.png) no-repeat  0 0;
+    opacity: .1;
+    transform: rotate(90deg);
+}
