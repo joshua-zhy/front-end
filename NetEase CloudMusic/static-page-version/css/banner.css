@@ -2,42 +2,42 @@
     background: url(../img/banner-blur.jpg) no-repeat center center/cover;
 }
 
-.wrap-banner {
+.wrap_02 {
     position: relative;
     height: 285px;
 }
 
-.wrap-banner .banner-left {
+.wrap_02 .banner-left {
     position: relative;
     width: 730px;
 }
 
-.wrap-banner .img-list {
+.wrap_02 .img-list {
     position: relative;
     display: flex;
     /* 溢出隐藏 */
     overflow: hidden;
 
 }
-.wrap-banner .img-list li {
+.wrap_02 .img-list li {
     /* 默认是1是压缩的  0表示不压缩 */
     flex-shrink: 0;
     width: 100%;
 }
 
 
-.wrap-banner .img-list .item  {
+.wrap_02 .img-list .item  {
     /* 继承到父元素的宽度 */
     display: block;
 }
 
 
-.wrap-banner .img-list .item img{
+.wrap_02 .img-list .item img{
     width: 100%;
     height: 285px;
 }
 
-.wrap-banner .banner-left .indicator {
+.wrap_02 .banner-left .indicator {
     position: absolute; 
     /* 这样设置必须要有固定的width  */
     /* width: 200px; */
@@ -49,19 +49,19 @@
     justify-content: center;
 }
 
-.wrap-banner .banner-left .indicator  li {
+.wrap_02 .banner-left .indicator  li {
     margin: 0 2px;
 }
 
-.wrap-banner .banner-left .indicator .item {
+.wrap_02 .banner-left .indicator .item {
     display: inline-block;
     width: 20px;
     height: 20px;
     background: url(../img/banner-indicator.png) 3px -343px;
 }
 
-.wrap-banner .banner-left .indicator .item.active, 
-.wrap-banner .banner-left .indicator .item:hover{
+.wrap_02 .banner-left .indicator .item.active, 
+.wrap_02 .banner-left .indicator .item:hover{
     background-position:  -16px -343px;
 } 
 

@@ -1,0 +1,82 @@
+.footer {
+    height: 325px;
+    border-top: 1px solid #ccc;
+    color: #666;
+}
+
+.icon-list {
+    display: flex;
+    height: 70px;
+    /* background-color: green; */
+    margin-top: 33px;
+    justify-content: space-between;
+}
+
+.icon-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list .item {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../img/footer-icons.png) no-repeat -170px -5px;
+    background-size: 220px 220px;
+}
+
+.icon-list .item:hover {
+  background-position: -5px -115px;  
+}
+
+.icon-list  .title {
+    font-size: 12px;
+    color:rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+
+.footer .copyright {
+    margin-top: 60px;
+}
+
+.footer .copyright .link {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.footer .copyright .link .item {
+    color: #666;
+}
+
+.footer .copyright .link .line {
+    margin: 0 5px;
+}
+
+.footer .copyright .tele {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer .copyright .siteinfo {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer .copyright .police {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer .copyright .police  .police-icon {
+   display: inline-block;
+   width: 14px;
+   height: 14px;
+   background: url(../img/police.png) no-repeat 0 0 /cover;
+}

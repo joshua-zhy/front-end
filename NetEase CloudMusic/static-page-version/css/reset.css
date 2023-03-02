@@ -1,8 +1,12 @@
-body,h1,h2,h3,h4,h5,h6,ul,li,p{
+body,h1,h2,h3,h4,h5,h6,ul,li,p,dl,dt,dd,ol{
     margin: 0;
     padding: 0;
 }
 
+
+i {
+    font-style: normal;
+}
 a {
     text-decoration: none;
     color: #000;
