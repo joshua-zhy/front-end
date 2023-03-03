@@ -1,0 +1,104 @@
+.header {
+    background-color: #323235;
+}
+
+.header_wrapper {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.header .area {
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    line-height: 84px;
+}
+
+
+.header .area .area-left .header-logo a {
+    position: relative;
+    top: 50%;
+    /* translate(左右，上下) */
+    transform: translate(0, -50%);
+    display: block;
+    width: 200px;
+    height: 54px;
+    background: url(../../img/header/header-logo.png) no-repeat center center;
+    text-indent: -999px;
+}
+
+.header .area .area-left .list {
+    display: flex;
+    margin-left: 30px;
+}
+
+.header .area .area-left .list .item {
+    width: 110px;
+}
+
+.header .area .area-left .list .item:hover,
+.header .area .area-left .list .item.active{
+    color: #e4b653;
+    background: url(../../img/sprite/main-sprite.png) no-repeat 0 0;
+
+}
+.header .area .area-left .list .item:hover a,
+.header .area .area-left .list .item.active a,
+.header .area .area-left .list .item:hover .desc ,
+.header .area .area-left .list .item.active .desc {
+    color: #e4b653;
+}
+
+
+.header .area .area-left .list .item a {
+    display: block;
+    line-height: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    color: #c9c9dd;
+}
+
+.header .area .area-left .list .item a .desc {
+    display: block;
+    line-height: 16px;
+    font-size: 12px;
+    color: #858792;
+}
+
+
+
+.header .area .area-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .area .area-right .login-icon {
+    border: 1px solid #d9ad50;
+    border-radius: 50%;
+}
+.header .area .area-right .login-icon a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: url(../../img/header/login-iocn.png);
+}
+
+.header .area .area-right .login-text {
+  line-height: 1;
+  margin:5px 0 0 5px;
+}
+
+.header .area .area-right .login-text h3 {
+   font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header .area .area-right .login-text p {
+    margin-top: 10px;
+    font-size: 14px;
+    color:#858792;
+}
